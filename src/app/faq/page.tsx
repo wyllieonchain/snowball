@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/header";
 
@@ -74,7 +73,7 @@ export default function FAQ() {
             {/* Card 5 - Minimum deposit */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-xl">
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
-                What's the minimum to get started?
+                What&apos;s the minimum to get started?
               </h3>
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                 You can start with as little as $100. There are no monthly fees, no minimum balance requirements, and no hidden charges. Just your money growing at 5-15% APY.
@@ -87,7 +86,7 @@ export default function FAQ() {
                 When will Snowball be available?
               </h3>
               <p className="text-gray-700 text-base leading-relaxed">
-                We're launching in October 2025! Join our waitlist to get early access and be among the first Canadians to start earning up to 25x more on their savings.
+                We&apos;re launching in October 2025! Join our waitlist to get early access and be among the first Canadians to start earning up to 25x more on their savings.
               </p>
             </div>
           </div>
