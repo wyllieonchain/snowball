@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Snowball Landing Page
+
+A clean, template-based landing page built with Next.js 14, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 **Clean Template**: Based on the standard Next.js template for easy customization
+- 📱 **Responsive Header**: Professional header with logo, navigation, and call-to-action
+- 🖼️ **Background Image**: Custom background image support
+- 🔗 **Navigation**: FAQ page link and waitlist button
+- ⚡ **Fast Performance**: Built with Next.js for optimal performance
+- 🎯 **SEO Ready**: Proper metadata and semantic HTML structure
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Font**: Gordita (commercial font - see setup instructions)
+- **Deployment**: Ready for Vercel, Netlify, or any hosting platform
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd snowball
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Add required assets:
+   - Place `background.png` in the `public/` folder
+   - Place `logoNOBG.png` in the `public/` folder
+   - Add Gordita font files to `src/fonts/` (see font setup instructions)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Required Assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Images
+- `public/background.png` - Background image for the landing page
+- `public/logoNOBG.png` - Logo image for the header
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Fonts
+- `src/fonts/Gordita-Regular.woff2` - Regular weight font
+- `src/fonts/Gordita-Medium.woff2` - Medium weight font  
+- `src/fonts/Gordita-Bold.woff2` - Bold weight font
 
-## Deploy on Vercel
+See `src/fonts/README.md` for detailed font setup instructions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout with font configuration
+│   ├── page.tsx         # Main landing page with header
+│   └── faq/             # FAQ page
+│       └── page.tsx     # FAQ content
+├── fonts/               # Font files directory
+│   └── README.md        # Font setup instructions
+└── ...
+public/
+├── background.png       # Background image
+├── logoNOBG.png        # Logo image
+└── ...
+```
+
+## Customization
+
+### Header
+- **Logo**: Update the logo image in the header
+- **Brand Name**: Change "Snowball" to your brand name
+- **Navigation**: Modify the FAQ link or add more navigation items
+- **Waitlist Button**: Customize the button text and styling
+
+### Background
+- Replace `background.png` with your own background image
+- Adjust the background positioning and sizing in the CSS
+
+### Content
+- The main content area contains the standard Next.js template
+- Customize the template content as needed for your landing page
+
+### Font
+- Add Gordita font files to use the configured font
+- Or switch to a free Google Font by updating the layout configuration
+
+## Deployment
+
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically on every push
+
+### Other Platforms
+- **Netlify**: Use `npm run build` and deploy the `out` folder
+- **AWS S3**: Build and upload the static files
+- **Custom Server**: Use `npm run build` and serve the built files
+
+## Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+For questions or support, please open an issue in the repository or contact the development team.
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
