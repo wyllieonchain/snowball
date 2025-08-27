@@ -66,7 +66,7 @@ export default function FAQ() {
                 Can I access my money anytime?
               </h3>
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                Yes! While your money works harder for you, you can still withdraw funds anytime. Withdrawals are processed within 1 business day via Interac e-transfer through our partner Paytrie.
+                Yes! While your money works harder for you, you can still withdraw funds anytime. Withdrawals are processed within 1 hour via Interac e-transfer through our partner Paytrie.
               </p>
             </div>
 
